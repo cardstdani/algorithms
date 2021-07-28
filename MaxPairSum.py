@@ -1,4 +1,4 @@
-def maxSum(list):
+def maxPairSum(list):
     if len(list) <= 1:
         return None
     
@@ -12,7 +12,7 @@ def maxSum(list):
                     currentSum = a+i
     return currentSum
 
-def recursiveMaxSum(list, currentSum=0):
+def recursiveMaxPairSum(list, currentSum=0):
     if len(list) <= 1:
         return currentSum
     for i in list:
