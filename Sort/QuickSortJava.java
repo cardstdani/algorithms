@@ -17,14 +17,16 @@ public class Main {
 		if (list.size() <= 1) {
 			return list;
 		}
-		int pivot = 0;
+		int pivot = list.size() / 2;
 		List<Integer> left = new ArrayList<>();
 		List<Integer> right = new ArrayList<>();
-		for (int i = 1; i < list.size(); i++) {
-			if (list.get(i) < list.get(pivot)) {
-				left.add(list.get(i));
-			} else {
-				right.add(list.get(i));
+		for (int i = 0; i < list.size(); i++) {
+			if (i != pivot) {
+				if (list.get(i) < list.get(pivot)) {
+					left.add(list.get(i));
+				} else {
+					right.add(list.get(i));
+				}
 			}
 		}
 
