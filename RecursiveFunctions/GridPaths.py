@@ -3,10 +3,11 @@ def gridPaths(x, y):
         return 1
     return gridPaths(x - 1, y) + gridPaths(x, y - 1)
 
+
 print(gridPaths(2, 3))
 
 def gridPathsMem(x, y, mem={}):
-    id = str(x)+str(y)
+    id = str(min(x, y)) + "," + str(max(x, y))
     if (id) in mem:
         return mem[id]
     if x == 1 or y == 1:
