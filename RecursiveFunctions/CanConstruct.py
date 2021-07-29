@@ -30,9 +30,7 @@ def canConstructMem(target, list, mem={}):
 
 
 print(canConstruct("abcdef", ["a", "b", "c", "d", "e", "f"]))
-print(canConstruct("enterapotentpot", ["a", "p", "ent", "enter", "ot", "o", "t"]))
 print(canConstructMem("abcdef", ["a", "b", "c", "d", "e", "f"]))
-print(canConstructMem("enterapotentpot", ["a", "p", "ent", "enter", "ot", "o", "t"]))
 
 def canConstruct2(target, list):
     if len(target) == 0:
@@ -62,6 +60,4 @@ def canConstructMem2(target, list, mem={}):
 
 
 print(canConstruct2("abcdef", ["a", "b", "c", "d", "e", "f"]))
-print(canConstruct2("enterapotentpot", ["a", "p", "ent", "enter", "ot", "o", "t"]))
 print(canConstructMem2("abcdef", ["a", "b", "c", "d", "e", "f"]))
-print(canConstructMem2("enterapotentpot", ["a", "p", "ent", "enter", "ot", "o", "t"]))
