@@ -1,3 +1,10 @@
+def gridPaths(x, y):
+    if x == 1 or y == 1:
+        return 1
+    return gridPaths(x - 1, y) + gridPaths(x, y - 1)
+
+print(gridPaths(2, 3))
+
 def gridPathsMem(x, y, mem={}):
     id = str(x)+str(y)
     if (id) in mem:
