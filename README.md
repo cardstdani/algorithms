@@ -1,8 +1,8 @@
 # Algorithms
-The ASNEPPC (provisional name) algorithm repository
+The PCPC's algorithm repository
 
 ## Description:
-This repository contains implementations of various algorithms in multiple programming languages (python, java). These algorithms cover a wide range of topics including sorting, searching, graph algorithms, dynamic programming, and more. Each algorithm is thoroughly documented and comes with examples demonstrating its usage.
+This repository contains implementations of various algorithms in multiple programming languages (python, java and, sunner rather than later, c++). These algorithms cover a wide range of topics including sorting, searching, graph algorithms, dynamic programming, and more. Each algorithm is thoroughly documented and comes with examples demonstrating its usage.
 
 ## Table of Contents:
 - Introduction
@@ -32,9 +32,9 @@ This section categorizes algorithms based on their functionality:
 Each algorithm comes with its own documentation and example code, making it easy to understand and use. Simply navigate to the respective directory and follow the instructions provided in the README file.
 
 ## Who are we?
-Born on UVa (Spain) in 2024, we are a group of students passionate about algorithms, data structures and competitive programing on the seek of new knowledge and fun.  
+Born on University of Valladolid (Spain) in 2024, we are a group of students passionate about algorithms, data structures and competitive programing on the seek of new knowledge and fun.  
 We also try to attend to every coding competitions we can (like CCC, Ada-Byron, ...), for which we organize practice meetings.  
-We are ussed to work with python, but on our way to migrate to java/c++ for better performance 👷.
+We are ussed to work with python, but on our way to migrate to c++ for better performance 👷.
 
 ## Contact us
 Any questions, feedback, or contributions are welcome. Feel free to reach out through the following channels:
