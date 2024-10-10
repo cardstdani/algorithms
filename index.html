@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Competitive Programming Association</title>
+    <title>PCPC - Pintoresco Club de Programación Competitiva</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,26 +12,40 @@
             padding: 0;
         }
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: #fef200;
+            color: #333;
             padding: 15px;
             text-align: center;
+            transition: background-color 0.6s ease, transform 0.6s ease;
+        }
+        header:hover {
+            background-color: #333;
+            color: #fef200;
+            transform: scale(1.05);
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: #444;
+            background-color: #ffc20f;
             padding: 10px;
+            transition: background-color 0.6s ease;
+        }
+        nav:hover {
+            background-color: #333;
         }
         nav a {
             color: #fff;
             text-decoration: none;
             margin: 0 15px;
-            padding: 8px;
+            padding: 15px;
+            cursor: pointer;
+            background-color: #333;
+            transition: background-color 0.4s ease, transform 0.4s ease;
+            border-radius: 0;
         }
         nav a:hover {
-            background-color: #555;
-            border-radius: 5px;
+            background-color: #fef200;
+            transform: scale(1.2);
         }
         .content {
             padding: 20px;
@@ -39,8 +53,14 @@
             margin: auto;
             background: #fff;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.5s ease, transform 0.5s ease;
+        }
+        .content:hover {
+            box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
+            transform: scale(1.05);
         }
         .section {
+            display: none;
             margin-bottom: 30px;
         }
         .github-link {
@@ -51,57 +71,107 @@
             margin-top: 20px;
             display: inline-block;
             text-decoration: none;
+            transition: background-color 0.4s ease, transform 0.4s ease;
         }
         .github-link:hover {
-            background-color: #555;
+            background-color: #fef200;
+            transform: scale(1.2);
         }
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: #ffc20f;
+            color: #333;
             text-align: center;
             padding: 15px;
             position: fixed;
             left: 0;
             bottom: 0;
             width: 100%;
+            transition: background-color 0.6s ease, transform 0.6s ease;
+        }
+        footer:hover {
+            background-color: #333;
+            color: #fef200;
+            transform: scale(1.05);
+        }
+        a img:hover {
+            transform: scale(1.3);
+            transition: transform 0.4s ease;
         }
     </style>
+    <link rel="icon" href="WebResources/LogoBanner.png">
+    <link rel="icon" href="WebResources/LogoBanner.png" type="image/png">
 </head>
 <body>
     <header>
-        <h1>Competitive Programming Association</h1>
+        <img src="WebResources/LogoBanner.png" alt="PCPC Logo" style="height: 60px; margin-right: 10px; vertical-align: middle;">
+        <h1 style="display: inline;">Pintoresco Club de Programación Competitiva</h1>
     </header>
     <nav>
-        <a href="#about">About Us</a>
-        <a href="#algorithms">Algorithms</a>
-        <a href="#events">Events</a>
-        <a href="#contact">Contact</a>
+        <a id="about-link">Sobre Nosotros</a>
+        <a id="algorithms-link">Algoritmos</a>
+        <a id="events-link">Eventos</a>
+        <a id="contact-link">Contacto</a>
     </nav>
     <div class="content">
         <div class="section" id="about">
-            <h2>About Us</h2>
-            <p>We are a community of coding enthusiasts passionate about competitive programming and algorithmic challenges. Our goal is to provide resources and a platform for programmers to enhance their skills and excel in competitions around the world.</p>
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una comunidad de entusiastas de la programación apasionados por la programación competitiva y los desafíos algorítmicos. Nuestro objetivo es proporcionar recursos y una plataforma para que los programadores mejoren sus habilidades y destaquen en competiciones de todo el mundo.</p>
+            <p>Explora nuestra colección de algoritmos de programación competitiva disponibles en nuestro repositorio de GitHub. Desde estructuras de datos básicas hasta algoritmos avanzados de grafos, tenemos todo lo necesario para ayudarte a comenzar. Únete a nosotros en próximos concursos, hackatones y talleres destinados a mejorar tus habilidades de resolución de problemas y aprender nuevas técnicas de expertos en el campo. Para consultas o para unirte a nuestra comunidad, contáctanos en <strong>contact@cpassociation.com</strong>.</p>
         </div>
         <div class="section" id="algorithms">
-            <h2>Algorithms Repository</h2>
-            <p>Explore our curated collection of competitive programming algorithms available on our GitHub repository. From basic data structures to advanced graph algorithms, we have everything to help you get started.</p>
-            <a class="github-link" href="https://github.com/cardstdani/algorithms" target="_blank">Visit Our GitHub Repository</a>
+            <h2>Repositorio de Algoritmos</h2>
+            <p>Explora nuestra colección de algoritmos de programación competitiva disponibles en nuestro repositorio de GitHub. Desde estructuras de datos básicas hasta algoritmos avanzados de grafos, tenemos todo lo necesario para ayudarte a comenzar.</p>
+            <a class="github-link" href="https://github.com/cardstdani/algorithms" target="_blank">Visita Nuestro Repositorio en GitHub</a>
         </div>
         <div class="section" id="events">
-            <h2>Upcoming Events</h2>
-            <p>Join us for upcoming contests, hackathons, and workshops aimed at improving your problem-solving skills and learning new techniques from experts in the field.</p>
+            <h2>Próximos Eventos</h2>
+            <p>Únete a nosotros en los próximos concursos, hackatones y talleres destinados a mejorar tus habilidades de resolución de problemas y aprender nuevas técnicas de expertos en el campo.</p>
         </div>
         <div class="section" id="contact">
-            <h2>Contact Us</h2>
-            <p>For inquiries or to join our community, reach out to us at <strong>contact@cpassociation.com</strong>.</p>
+            <h2>Contacto</h2>
+            <p>Para consultas o para unirte a nuestra comunidad, contáctanos en <strong>contact@cpassociation.com</strong>.</p>
+            <p>También puedes unirte a nuestro grupo de Telegram escaneando el siguiente código QR:</p>
+            <a href="https://t.me/+1IvfRpogU1U3NWE0" target="_blank"><img src="WebResources/QRTelegram.png" alt="QR para unirse al Telegram de PCPC" style="width: 200px; height: 200px; margin-top: 10px;"></a>
+        
         </div>
     </div>
     <footer>
-        <p>&copy; 2024 Competitive Programming Association</p>
+        <p>&copy; 2024 Pintoresco Club de Programación Competitiva</p>
     </footer>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            console.log('Welcome to the Competitive Programming Association!');
+            // Function to hide all sections
+            function hideAllSections() {
+                document.querySelectorAll('.section').forEach(function(section) {
+                    section.style.display = 'none';
+                });
+            }
+
+            // Function to show a specific section
+            function showSection(sectionId) {
+                hideAllSections();
+                document.getElementById(sectionId).style.display = 'block';
+            }
+
+            // Set event listeners for navigation links
+            document.getElementById('about-link').addEventListener('click', function() {
+                showSection('about');
+            });
+
+            document.getElementById('algorithms-link').addEventListener('click', function() {
+                showSection('algorithms');
+            });
+
+            document.getElementById('events-link').addEventListener('click', function() {
+                showSection('events');
+            });
+
+            document.getElementById('contact-link').addEventListener('click', function() {
+                showSection('contact');
+            });
+
+            // Show the About section by default
+            showSection('about');
         });
     </script>
 </body>
