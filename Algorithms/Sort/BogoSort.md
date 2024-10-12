@@ -1,19 +1,25 @@
 # Bogo Sort
 
 ## Description
-Bogo Sort or Stupid Sort it's a sorting algorithm that generates a random permutation of the elements and check if it's sorted. If it's not, it generates a new random permutation and check again, until the list is sorted.
+Bogo Sort or Stupid Sort it's a sorting algorithm that generates a random permutation of the elements and check if it's sorted. If it's not, it generates a new random permutation and checks again, until the list is sorted.
 
-## Eficiency
+## Efficiency
 Temporal complexity
-- Best case scennario: 
-$$O(n)$$ 
-- Mean case scennario: 
-$$O((n-1)n!)$$
-- Worst case scennario: 
+- Best case scenario: 
+$$O(n)$$
+
+    To build a randomly shuffled list from the original one the algorithm needs a time proportional to the list's length, which in this case is denoted as n. Therefore, in the best case, the first iteration finds the sorted list, needing only $$O(n)$$ elementary operations for generating the shuffled list.
+- Average case: 
+$$O(n\cdot n!)$$
+
+    In the average case, the algorithm traverses all the state space of the input list, which has a $$n!$$ cardinal, and then reaches the sorted list. For each generated list, it performs a work proportional to n, so the ultimate complexity bound is $$O(n\cdot n!)$$, which has a constant multiplying it stemming from the probability of the random generator reaching the sorted sequence in a reduced, or augmented quantity of iterations.
+- Worst case scenario: 
 $$undefined$$
 
-Memory complexity
-$$O(1)$$
+    It could take an infinite amount of time to achieve a sorted list if the random generator used to build the intermediate lists does not reach the specific sorted state, that is, it depends on the probability of the randomly generated sequence reaching such state, which in the worst case might approach infinity.
+
+Memory complexity:
+$$O(1)$$ (no extra space is required)
 
 ## Pseudocode
 ```
